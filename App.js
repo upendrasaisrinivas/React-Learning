@@ -1,8 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const container = <h1 id="container">This is JSX first code</h1>
-  const root = ReactDOM.createRoot(document.getElementById("root"));
-  //passing a react element inside the root
-  //async defer
-  root.render(container);
+const element = <span>This is JSX Span</span>;
+const Heading = () => <h1 id="heading"> This is Heading </h1>
+
+// Component Composition - Calling Heading in Container
+const Container = () => (<div id="container"><Heading/>{element}</div>);
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<Container/>);

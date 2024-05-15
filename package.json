@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "This is my React Preparation ( Upendra )",
   "scripts": {
+    "start": "parcel index.html",
+    "Build": "parcel build index.html",
     "test": "jest"
   },
   "repository": {
